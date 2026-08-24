@@ -1,0 +1,2 @@
+import {describe,expect,it} from 'vitest'; import {money,parseMoney,percentage} from './lib';
+describe('formatadores financeiros',()=>{it('formata BRL em pt-BR',()=>expect(money(180397.19)).toContain('180.397,19'));it('interpreta entrada monetária brasileira',()=>expect(parseMoney('R$ 1.234,56')).toBe(1234.56));it('limita e remove zeros do percentual',()=>{expect(percentage(45)).toBe('45%');expect(percentage(120)).toBe('100%');expect(percentage(-2)).toBe('0%')})});
