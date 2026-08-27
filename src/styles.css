@@ -29,3 +29,10 @@ td{border-color:var(--border)}.input{background:var(--background);color:var(--fo
 .skeleton{background:linear-gradient(90deg,var(--secondary) 25%,var(--muted) 50%,var(--secondary) 75%);background-size:200% 100%;border-radius:var(--radius)}
 .demo-banner{background:var(--accent);color:var(--accent-foreground)}
 @media(max-width:720px){.close-menu,.menu-button{color:var(--sidebar-foreground)}}
+:root{color-scheme:light}.dark{color-scheme:dark}
+.sidebar-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:1px solid var(--sidebar-border);padding-top:16px}
+.connection-status{display:flex;align-items:center;min-width:0}
+.theme-toggle{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;width:34px;height:34px;padding:0;border:1px solid var(--sidebar-border);border-radius:var(--radius);background:var(--sidebar);color:var(--sidebar-foreground);transition:background .2s,color .2s,border-color .2s}
+.theme-toggle:hover{background:var(--sidebar-accent);color:var(--sidebar-accent-foreground);border-color:var(--sidebar-ring)}
+.theme-toggle:focus-visible{outline:2px solid var(--sidebar-ring);outline-offset:2px}.theme-toggle svg{width:17px;height:17px}
+table{color:var(--card-foreground)}tbody tr:hover{background:var(--muted)}select option{background:var(--popover);color:var(--popover-foreground)}
