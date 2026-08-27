@@ -20,7 +20,7 @@ body{background:var(--background);color:var(--foreground)}
 .card,.modal{background:var(--card);color:var(--card-foreground);border-color:var(--border);border-radius:var(--radius);box-shadow:var(--shadow-sm)}
 .metric-icon,.badge,.import-summary{background:var(--accent);color:var(--accent-foreground);border-radius:var(--radius)}
 .metric.accent{background:var(--primary)}.metric.accent p,.metric.accent strong{color:var(--primary-foreground)!important}.metric.accent .metric-icon{background:color-mix(in oklch,var(--primary-foreground) 16%,transparent);color:var(--primary-foreground)}
-.gauge:before{background:conic-gradient(from 270deg at 50% 100%,var(--chart-1) 0deg,var(--progress),var(--secondary) var(--progress),var(--secondary) 180deg,transparent 180deg)}
+.gauge{--gauge-remaining:var(--secondary)}.dark .gauge{--gauge-remaining:color-mix(in oklch,var(--muted-foreground) 24%,var(--card))}.gauge:before{background:conic-gradient(from 270deg at 50% 100%,var(--chart-1) 0deg,var(--progress),var(--gauge-remaining) var(--progress),var(--gauge-remaining) 180deg,transparent 180deg)}
 .card-title>svg,.text-link,.empty svg,.import-summary svg{color:var(--primary)}
 td{border-color:var(--border)}.input{background:var(--background);color:var(--foreground);border-color:var(--input);border-radius:var(--radius)}.input:focus{border-color:var(--ring);box-shadow:0 0 0 3px color-mix(in oklch,var(--ring) 18%,transparent)}
 .filters label,.field,.row-actions button,.icon{color:var(--secondary-foreground)}.row-actions .danger,.form-error,.error,.import-inline-error{color:var(--destructive)!important}
